@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  /* 1. تحديد عرض السكرول بار */
+  ::-webkit-scrollbar {
+    width: 6px; /* رفيع جداً */
+    height: 6px; /* للعرض الأفقي لو وجد */
+  }
+
+  /* 2. لون الخلفية (المسار) - خليناها شفافة */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+
+  /* 3. لون الجزء المتحرك (Thumb) - ده اللي هيبقى زي الناف بار */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #3b82f6, #a855f7, #ec4899); /* أزرق -> بنفسجي -> وردي */
+    border-radius: 10px; /* حواف دائرية */
+  }
+
+  /* 4. لما تقف عليه بالماوس */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #2563eb, #9333ea, #db2777); /* يغمق سنة بسيطة */
+  }
+}
