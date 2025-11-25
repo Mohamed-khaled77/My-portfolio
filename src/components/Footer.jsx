@@ -50,7 +50,7 @@ const Footer = () => {
                 <div className="w-full aspect-square overflow-hidden rounded-2xl border-2 border-slate-700/50 shadow-inner">
                    {/* حط صورتك هنا */}
                   <img 
-                    src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=400&auto=format&fit=crop" 
+                    src="/Mohamedkhaled.jpg" 
                     alt="Mohamed" 
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
