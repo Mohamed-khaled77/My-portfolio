@@ -26,7 +26,7 @@ const projects = [
     longDescription: "A full-stack e-commerce solution tailored for dental cosmetic products. The platform allows dentists and users to browse products, manage their cart, and process secure payments. It features a robust admin dashboard for inventory management.",
     features: ["User Authentication (Login/Signup)", "Shopping Cart & Checkout", "Admin Dashboard", "Product Filtering & Search"],
     tags: ["React", "PHP", "MySQL", "Tailwind"],
-    image: "/public/img/Screenshot_25-11-2025_19542_localhost.jpeg",
+    image: "/public/Screenshot_25-11-2025_19542_localhost.jpeg",
     github: "#",
     demo: "#"
   },
@@ -46,7 +46,7 @@ const projects = [
     longDescription: "The website you are currently visiting. It showcases my skills and projects using the latest frontend technologies. It features a fully responsive design, dark mode, and smooth animations.",
     features: ["Dark Mode Support", "Responsive Design", "Smooth Animations (Framer Motion)", "Component-Based Architecture"],
     tags: ["React", "Shadcn", "Tailwind"],
-    image: "/public/img/Screenshot_25-11-2025_195138_localhost.jpeg",
+    image: "/public/Screenshot_25-11-2025_195138_localhost.jpeg",
     github: "#",
     demo: "#"
   }
