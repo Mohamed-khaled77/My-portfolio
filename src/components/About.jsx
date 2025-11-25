@@ -22,7 +22,7 @@ const About = () => {
         <FadeIn direction="right" delay={0.2}>
           <div className="space-y-6 text-lg text-slate-400 leading-relaxed">
             <p>
-              Hello! I'm <strong className="text-white">Mohamed</strong>, a passionate Frontend Developer based in Cairo, Egypt. 
+              Hello! I'm <strong className="text-white">Mohamed Khaled</strong>, a passionate Frontend Developer based in Cairo, Egypt. 
               I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.
             </p>
             

@@ -28,7 +28,7 @@ const Hero = () => {
       {/* 3. Description (English) */}
       <FadeIn delay={0.6}>
       <p className="max-w-[650px] text-slate-400 text-lg md:text-xl leading-relaxed">
-        Hi, I'm Mohamed. A passionate Frontend Developer specializing in React.js. 
+        Hi, I'm Mohamed Khaled A passionate Frontend Developer specializing in React.js. 
         I transform ideas into fast, interactive, and visually stunning web applications 
         with a strong focus on user experience and clean code.
       </p>

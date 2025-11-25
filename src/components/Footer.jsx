@@ -32,7 +32,7 @@ const Footer = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="mailto:mohamed@example.com">
+              <a href="mohamedkahled.0345@gmail.com">
                 <Button size="lg" className="px-8 font-bold rounded-full shadow-lg shadow-primary/20 hover:scale-105 transition-transform gap-2">
                   <FaEnvelope /> Send Email
                 </Button>
@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
 
                 <div className="space-y-1">
-                  <h3 className="text-xl font-bold text-white">Mohamed</h3>
+                  <h3 className="text-xl font-bold text-white">Mohamed Khaled</h3>
                   <p className="text-primary text-sm font-medium">Frontend Developer</p>
                 </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
 
         {/* Copyright Section (صغرته شوية كمان) */}
         <div className="border-t border-slate-900 pt-6 flex flex-col md:flex-row justify-between items-center text-slate-600 text-xs md:text-sm">
-          <p>© 2025 Mohamed. All rights reserved.</p>
+          <p>© 2025 Mohamed Khaled All rights reserved.</p>
           <p className="mt-2 md:mt-0 flex items-center gap-1">
             Made with <span className="text-red-500">♥</span> using React & Shadcn
           </p>

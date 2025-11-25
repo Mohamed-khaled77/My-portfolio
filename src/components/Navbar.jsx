@@ -17,7 +17,7 @@ const Navbar = () => {
         />
       {/* Logo */}
       <a href="#home" className="text-xl font-bold tracking-tighter cursor-pointer">
-        Mohamed<span className="text-primary">.dev</span>
+        Mohamed<span className="text-primary"> Khaled</span>
       </a>
 
       {/* Links - ضفنا Services هنا */}
