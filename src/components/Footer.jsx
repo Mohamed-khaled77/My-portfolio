@@ -4,9 +4,7 @@ import { Button } from "@/components/ui/button";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
-  FaEnvelope,
-  FaMapMarkerAlt,
+
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -61,21 +59,17 @@ const Footer = () => {
 
                 {/* Social Icons Compact */}
                 <div className="flex gap-3 mt-2">
-                  <a
-                    href="#"
-                    className="p-2 bg-slate-800 rounded-lg text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
+                  <a 
+                    href="https://github.com/Mohamed-khaled77"
+                    className="  p-2 bg-slate-800 rounded-lg text-slate-400 hover:text-white hover:bg-slate-700 transition-all">
                     <FaGithub size={18} />
                   </a>
                   <a
-                    href="#"
+                    href="www.linkedin.com/in/mohamedkhaledsayed"
                     className="p-2 bg-slate-800 rounded-lg text-slate-400 hover:text-blue-400 hover:bg-slate-700 transition-all">
                     <FaLinkedin size={18} />
                   </a>
-                  <a
-                    href="#"
-                    className="p-2 bg-slate-800 rounded-lg text-slate-400 hover:text-sky-400 hover:bg-slate-700 transition-all">
-                    <FaTwitter size={18} />
-                  </a>
+            
                 </div>
               </CardContent>
             </Card>
