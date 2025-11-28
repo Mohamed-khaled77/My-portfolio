@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 const FadeIn = ({ children, delay = 0, direction = 'up', className = '' }) => {
   
-  // تحديد اتجاه الحركة
   const variants = {
     hidden: { 
       opacity: 0, 
@@ -15,9 +14,9 @@ const FadeIn = ({ children, delay = 0, direction = 'up', className = '' }) => {
       y: 0, 
       x: 0,
       transition: { 
-        duration: 0.6, // مدة الحركة
-        delay: delay,  // التأخير
-        ease: [0.25, 0.25, 0.25, 0.75], // نوع الحركة (ناعمة)
+        duration: 0.6, 
+        delay: delay, 
+        ease: [0.25, 0.25, 0.25, 0.75], 
       }
     }
   };
@@ -27,7 +26,7 @@ const FadeIn = ({ children, delay = 0, direction = 'up', className = '' }) => {
       variants={variants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-50px" }} // الحركة تحصل مرة واحدة بس لما العنصر يظهر
+      viewport={{ once: true, margin: "-50px" }}  
       className={className}
     >
       {children}

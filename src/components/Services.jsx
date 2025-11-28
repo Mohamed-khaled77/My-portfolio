@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
-import FadeIn from './FadeIn'; // استيراد
+import FadeIn from './FadeIn';
 
 const services = [
   {

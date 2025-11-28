@@ -5,7 +5,6 @@ import { FaArrowUp } from "react-icons/fa";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // يظهر الزرار لما ننزل 300px
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -14,7 +13,6 @@ const ScrollToTop = () => {
     }
   };
 
-  // يطلع لفوق ناعم
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

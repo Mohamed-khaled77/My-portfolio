@@ -1,13 +1,13 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { 
-  FaReact, FaJs, FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaNodeJs, FaGithub, FaGitAlt, FaFigma 
+import {
+  FaReact, FaJs, FaHtml5, FaCss3Alt, FaSass, FaBootstrap, FaNodeJs, FaGithub, FaGitAlt, FaFigma
 } from "react-icons/fa";
-import { 
-  SiTypescript, SiNextdotjs, SiTailwindcss, SiAxios, SiReactquery, SiRedux, SiPostman, SiVite 
+import {
+  SiTypescript, SiNextdotjs, SiTailwindcss, SiAxios, SiReactquery, SiRedux, SiPostman, SiVite, SiStrapi, SiShadcnui
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
-import FadeIn from './FadeIn'; // استيراد الانيميشن
+import FadeIn from './FadeIn';
 
 const skills = [
   {
@@ -18,6 +18,7 @@ const skills = [
       { name: "JavaScript", icon: <FaJs className="text-yellow-400" /> },
       { name: "TypeScript", icon: <SiTypescript className="text-blue-600" /> },
       { name: "Tailwind CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+      { name: "Shadcn/ui", icon: <SiShadcnui className="text-white" /> }, // ضفنا دي
       { name: "Bootstrap", icon: <FaBootstrap className="text-purple-600" /> },
       { name: "Sass", icon: <FaSass className="text-pink-400" /> },
     ]
@@ -37,6 +38,7 @@ const skills = [
     category: "Backend & Tools",
     items: [
       { name: "Node.js", icon: <FaNodeJs className="text-green-500" /> },
+      { name: "Strapi CMS", icon: <SiStrapi className="text-indigo-500" /> }, // ضفنا دي
       { name: "Git", icon: <FaGitAlt className="text-red-500" /> },
       { name: "GitHub", icon: <FaGithub className="text-white" /> },
       { name: "Vite", icon: <SiVite className="text-purple-400" /> },
@@ -49,7 +51,7 @@ const skills = [
 const Skills = () => {
   return (
     <section className="container mx-auto px-6 py-16">
-      
+
       <FadeIn direction="down">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-3">Tech Stack 🛠️</h2>
@@ -61,19 +63,15 @@ const Skills = () => {
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {skills.map((group, index) => (
-          // التعديل هنا: ضفنا className="h-full" للـ FadeIn
           <FadeIn key={index} delay={index * 0.2} className="h-full">
-            
-            {/* التعديل هنا: ضفنا h-full للكارد نفسه عشان يملا المساحة */}
             <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/40 transition-colors h-full flex flex-col">
-              
+
               <CardHeader className="pb-3 pt-5 px-5">
                 <CardTitle className="text-xl text-primary font-bold">
                   {group.category}
                 </CardTitle>
               </CardHeader>
 
-              {/* flex-grow عشان يزق المحتوى ويحافظ على الشكل */}
               <CardContent className="px-5 pb-5 flex flex-col gap-2 flex-grow">
                 {group.items.map((skill, idx) => (
                   <div key={idx} className="flex items-center gap-3 p-1.5 rounded-md hover:bg-slate-800/80 transition-colors">

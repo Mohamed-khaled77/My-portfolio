@@ -1,13 +1,12 @@
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { FaGraduationCap, FaCode, FaGlobe, FaBriefcase } from "react-icons/fa";
-import FadeIn from './FadeIn'; // استيراد الانيميشن
+import FadeIn from './FadeIn'; 
 
 const About = () => {
   return (
     <section id="about" className="container mx-auto px-6 py-24">
       
-      {/* 1. العنوان */}
       <FadeIn direction="down">
         <div className="mb-12">
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
@@ -18,7 +17,6 @@ const About = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         
-        {/* 2. الجزء النصي (حكايتك) */}
         <FadeIn direction="right" delay={0.2}>
           <div className="space-y-6 text-lg text-slate-400 leading-relaxed">
             <p>
@@ -40,10 +38,8 @@ const About = () => {
           </div>
         </FadeIn>
 
-        {/* 3. جزء الكروت (معلومات سريعة) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           
-          {/* كارد التعليم */}
           <FadeIn delay={0.4}>
             <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/40 transition-colors h-full">
               <CardContent className="p-6 flex flex-col gap-3">
@@ -56,7 +52,6 @@ const About = () => {
             </Card>
           </FadeIn>
 
-          {/* كارد التخصص */}
           <FadeIn delay={0.5}>
             <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/40 transition-colors h-full">
               <CardContent className="p-6 flex flex-col gap-3">
@@ -69,7 +64,6 @@ const About = () => {
             </Card>
           </FadeIn>
 
-          {/* كارد الموقع */}
           <FadeIn delay={0.6}>
             <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/40 transition-colors h-full">
               <CardContent className="p-6 flex flex-col gap-3">
@@ -82,7 +76,6 @@ const About = () => {
             </Card>
           </FadeIn>
 
-          {/* كارد الاهتمامات */}
           <FadeIn delay={0.7}>
             <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/40 transition-colors h-full">
               <CardContent className="p-6 flex flex-col gap-3">

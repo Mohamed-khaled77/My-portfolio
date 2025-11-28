@@ -13,8 +13,8 @@ import {
   DialogHeader, 
   DialogTitle, 
   DialogTrigger 
-} from "@/components/ui/dialog"; // استيراد النافذة المنبثقة
-import { Badge } from "@/components/ui/badge";
+} from "@/components/ui/dialog";
+import { Badge } from "@/components/ui/badge";      
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaExternalLinkAlt, FaCheckCircle } from "react-icons/fa";
 import FadeIn from './FadeIn';
@@ -69,9 +69,8 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Dialog key={index}>
             
-            {/* 1. الكارد الخارجي (هو الزرار اللي بيفتح النافذة) */}
             <DialogTrigger asChild>
-              <div className="h-full cursor-pointer"> {/* div عشان نغلف FadeIn */}
+              <div className="h-full cursor-pointer"> 
                 <FadeIn delay={index * 0.2} className="h-full">
                   <Card className="bg-slate-900/50 border-slate-800 hover:border-primary/50 transition-all duration-300 flex flex-col overflow-hidden group h-full hover:shadow-xl hover:shadow-primary/10">
                     
@@ -81,7 +80,6 @@ const Projects = () => {
                         alt={project.title} 
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       />
-                      {/* طبقة شفافة تظهر عند الهوفر */}
                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                         <span className="text-white font-bold border border-white px-4 py-1 rounded-full text-sm">View Details</span>
                       </div>
@@ -109,7 +107,6 @@ const Projects = () => {
               </div>
             </DialogTrigger>
 
-            {/* 2. محتوى النافذة المنبثقة (Modal Content) */}
             <DialogContent className="bg-slate-950 border-slate-800 text-slate-100 max-w-3xl max-h-[85vh] overflow-y-auto pr-6">
               <DialogHeader>
                 <DialogTitle className="text-2xl font-bold text-primary mb-2">{project.title}</DialogTitle>
@@ -119,12 +116,9 @@ const Projects = () => {
               </DialogHeader>
 
               <div className="grid md:grid-cols-2 gap-6 mt-4">
-                {/* الصورة الكبيرة */}
                 <div className="rounded-xl overflow-hidden border border-slate-800">
                   <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                 </div>
-
-                {/* التفاصيل والمميزات */}
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-bold text-white mb-2">About Project</h4>
@@ -144,7 +138,6 @@ const Projects = () => {
                     </ul>
                   </div>
                   
-                  {/* التقنيات */}
                   <div className="flex flex-wrap gap-2 pt-2">
                     {project.tags.map((tag, idx) => (
                       <Badge key={idx} variant="secondary" className="bg-slate-800 text-slate-300 hover:bg-slate-700">
@@ -155,7 +148,6 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* أزرار الأكشن في المودال */}
               <div className="flex gap-4 mt-6 pt-4 border-t border-slate-800">
                 <a href={project.github} target="_blank" rel="noreferrer" className="flex-1">
                   <Button variant="outline" className="w-full gap-2 border-slate-700 hover:bg-slate-800 hover:text-white">
