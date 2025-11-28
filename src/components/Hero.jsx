@@ -37,7 +37,7 @@ const Hero = () => {
           </Button>
         </a>
         
-        <a href="/cv.pdf" target="_blank" className="w-full sm:w-auto">
+        <a href="/Mohamed_Khaled_cv.pdf" target="_blank" className="w-full sm:w-auto">
           <Button size="lg" variant="secondary" className="w-full px-8 text-md bg-slate-800 text-white hover:bg-slate-700">
              Download CV
           </Button>
