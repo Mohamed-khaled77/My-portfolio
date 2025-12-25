@@ -23,7 +23,7 @@ const projects = [
     description: "Full-stack graduation project with Cart & Auth.",
     longDescription: "A specialized e-commerce platform for dental cosmetic products. The platform allows dentists and users to browse products, manage their cart, and process secure payments. It features a robust admin dashboard built with PHP & MySQL.",
     features: ["User Authentication (Login/Signup)", "Shopping Cart & Checkout", "Admin Dashboard", "PHP & MySQL Backend"],
-    tags: ["React", "PHP", "MySQL", "Tailwind"],
+    tags: ["React", "PHP", "MySQL", "Tailwind","Shadcn"],
     image: "/dental.jpg", // غير المسار لصورتك
     github: "https://github.com/Mohamed-khaled77/smile-cosmetics-store.git",
     demo: "https://smile-cosmetics-store.vercel.app/"
@@ -33,7 +33,7 @@ const projects = [
     description: "Gamified educational platform (LMS).",
     longDescription: "A comprehensive Learning Management System (LMS) designed to make learning fun. It features a gamified experience with levels, badges, and progress tracking, powered by Strapi CMS.",
     features: ["Gamification System (Points & Levels)", "Course Management via Strapi", "Modern UI with Material UI", "User Progress Tracking"],
-    tags: ["React", "Strapi CMS", "MUI", "Redux"],
+    tags: ["React", "Strapi CMS", "MUI"],
     image: "/Level-Up-Academy.jpg",
     github: "https://github.com/Mohamed-khaled77/Level-Up-Academy.git",
     demo: "#"
@@ -168,7 +168,7 @@ const Projects = () => {
                       </p>
 
                       <div className="flex flex-wrap gap-1.5 mt-auto">
-                        {project.tags.slice(0, 3).map((tag, idx) => (
+                        {project.tags.map((tag, idx) => (
                           <Badge key={idx} variant="outline" className="text-[10px] px-2 py-0 h-5 border-slate-700 text-slate-300">
                             {tag}
                           </Badge>
